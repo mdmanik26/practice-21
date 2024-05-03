@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice-21</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg bg-info  py-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Class21</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.ibb.co/4S1FVBt/slide1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/J3W115c/slide2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/c64XNrp/slide3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main class="container">
+        <h4 class="text-success my-2">Alerts</h4>
+        <div class="alert alert-success my-3" role="alert">
+            A simple success alert—check it out!
+        </div>
+        <h4 class="text-success my-2">Badges</h4>
+        <div>
+            <span class="badge text-bg-primary">Primary</span>
+            <span class="badge text-bg-secondary">Secondary</span>
+            <span class="badge text-bg-success">Success</span>
+            <span class="badge text-bg-danger">Danger</span>
+            <span class="badge text-bg-warning">Warning</span>
+            <span class="badge text-bg-info">Info</span>
+            <span class="badge text-bg-light">Light</span>
+            <span class="badge text-bg-dark">Dark</span>
+        </div>
+
+        <h4 class="text-success my-2">Accordian</h4>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="text-success my-2">Breadcrumb</h4>
+        <div>
+
+            <nav aria-label="breadcrumb" class="border rounded-2 mt-2 bg-light p-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+
+            <nav aria-label="breadcrumb" class="border rounded-2 mt-2 bg-light p-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+
+            <nav aria-label="breadcrumb" class="border rounded-2 mt-2 bg-light p-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+        </div>
+
+
+
+        <h4 class="text-success my-2">Bootstrap5 Responsive table with striped, hover & borderd style</h4>
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered table-striped table-hover text-center">
+                <thead class="">
+                    <tr>
+                        <th scope="col">SL</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">OCCAPATION</th>
+                        <th scope="col">ADDRESS</th>
+                        <th scope="col">CONTACT</th>
+                    </tr>
+                </thead>
+                <tbody class="fw-medium">
+                    <tr>
+                        <td>1</td>
+                        <td>Manik</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Moyej</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Tonmoy</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Tanvir</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Sujon</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Manik</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Moyej</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Tonmoy</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>Tanvir</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>Sujon</td>
+                        <td>Student</td>
+                        <td>Digram</td>
+                        <td>8800231451</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <h4 class="text-success my-2">Form</h4>
+        <div class="bg-light p-4">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected> Choose Your State</option>
+                        <option>Rajshahi</option>
+                        <option>Dhaka</option>
+                        <option>Rangpur</option>
+                        <option>Dinajpur</option>
+                        <option>Nawabgonj</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            HTML
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            CSS
+                        </label>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <h4 class="text-success my-2">Text Truncate</h4>
+        <p class="w-50 border p-5 text-truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis,
+            pariatur ab sunt laboriosam rerum consectetur iste quia vero quis, reiciendis voluptatum est. Iure ea
+            tempore necessitatibus consequatur, veritatis aut voluptas aperiam voluptatibus illo voluptatum optio
+            aliquam! Incidunt est eum molestiae perspiciatis maxime amet quo, ad similique earum officiis autem, quasi
+            esse distinctio aliquam fuga natus dolor nihil magni. Aliquam repudiandae illum rem dolorem enim! Possimus
+            assumenda voluptates error facilis velit explicabo harum ex sequi accusamus sed ducimus suscipit, corporis a
+            illo nemo cumque tenetur quasi commodi, dignissimos temporibus omnis, eaque molestias rem! Vitae incidunt
+            nihil corporis dolores illum, maxime fugiat!</p>
+
+
+
+
+        <h4 class="text-success my-2">Card With Stretched Link</h4>
+        <div class="mb-4">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/XkK0dVH/prodact.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card with stretched link</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/XkK0dVH/prodact.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card with stretched link</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/XkK0dVH/prodact.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card with stretched link</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+
+
+
+
+    </main>
+
+
+    <footer class="container py-2 bg-dark text-white text-center">
+        <p>&copy All Rights Reserved By Manik</p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
